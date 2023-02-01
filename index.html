@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgs\favicon.png" type="image/png">
+  <meta name="description" content="Відкриття всіх видів дверних замків без ушкодження в Києві та Київській області. Працюємо цілодобово, а головне – якісно. ">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>ExpressUnlock сервіс - служба аварійного відкриття замків.</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container-pupup" id="popup">
+    <div class="cookiesContent" id="cookiesPopup">
+      <button class="close" id="close">✖</button>
+      <img class="popup-img" src="imgs\favicon.png" alt="cookies-img" />
+      <p class="popup-info">Заявку прийнято, майстер незабаром зв'яжеться з вами!</p>
+      <button class="accept" id="accept">Продовжити</button>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header__logo"><span class="black">EXPRESS</span>UNLOCK</div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-element"><a href="#general">Головна</a></li>
+          <li class="header__menu-element"><a href="#info">Послуги</a></li>
+          <li class="header__menu-element"><a href="#faq">Про нас</a></li>
+          <li class="header__menu-element"><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header__info-right">
+        <div class="header__info-wrapper">
+          <div class="header__info">
+            <img src="imgs/location.svg" alt="">
+            <span>Київ</span>
+          </div>
+          <div class="header__info">
+            <img src="imgs/time.svg" alt="">
+            <span>24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+      <div class="menu__box">
+        <div class="header__logo"><span class="black">EXPRESS</span>UNLOCK</div>
+        <ul>
+    </section>
+          <li><a class="menu__item" href="#general">Головна</a></li>
+          <li><a class="menu__item" href="#info">Послуги</a></li>
+          <li><a class="menu__item" href="#faq">Про нас</a></li>
+          <li><a class="menu__item" href="#contacts">Контакти</a></li>
+        </ul>
+        <div class="menu__flex-mobile">
+          <div class="header__info-mobile">
+            <img src="imgs/location.svg" alt="">
+            <span>Київ</span>
+          </div>
+          <div class="header__info-mobile">
+            <img src="imgs/time.svg" alt="">
+            <span>24/7</span>
+          </div>
+        </div>
+        <div class="header-mobile">
+          <p class="mobile-description">Натисніть на номер щоб зателефонувати</p>
+          <p class="full__wrapper-mobile-btn"><img src="imgs\vodafone-logo.svg" alt="vodofone logo"><a href="tel:+380953361080">+ 38 (095) 336-10-80</a></p>
+          <p class="full__wrapper-mobile-btn"><img src="imgs\lifecell-logo.svg" alt="lifecell logo"><a href="tel:+380635161080">+ 38 (063) 516-10-80</a></p>
+          <p class="full__wrapper-mobile-btn"><img src="imgs\kyivstar-logo.svg" alt="kyivstar logo"><a href="tel:+380971591080">+ 38 (097) 159-10-80</a></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="first" id="general">
+      <div class="full__wrapper">
+        <div class="full__left">
+          <p class="full__left-bold">Аварійне <span class="yellow">відкриття</span> замків у
+            Києві та Київській області</p>
+          <p class="full__left-normal">Служба аварійного відкриття і ремонту замків допоможе Вам відчинити вхідні двері,
+            авто, гараж або сейф. Ми вирішимо будь-яку проблему в разі відсутності ключів, поломки, зношеності
+            механізму, навмисного або випадкового псування, спроби злому та ін.</p>
+			<form class="main-buttons">
+              <input placeholder="НОМЕР ТЕЛЕФОНУ" id="fname" class="text-button"/>
+              <input type="button" id="add_button" value="ЗАМОВИТИ ДЗВІНОК" id="add_button" class="main-button"/>
+              <div class="response"></div>
+            </form>
+            <div class="response two"></div>
+          <div class="full__left-btn_wrapper">
+            <div class="full__wrapper-mobile">
+              <p class="mobile-description">Натисніть на номер щоб зателефонувати</p>
+              <p class="full__wrapper-mobile-btn"><img src="imgs\vodafone-logo.svg" alt="vodofone logo"><a href="tel:+380953361080">+ 38 (095) 336-10-80</a></p>
+              <p class="full__wrapper-mobile-btn"><img src="imgs\lifecell-logo.svg" alt="lifecell logo"><a href="tel:+380635161080">+ 38 (063) 516-10-80</a></p>
+              <p class="full__wrapper-mobile-btn"><img src="imgs\kyivstar-logo.svg" alt="kyivstar logo"><a href="tel:+380971591080">+ 38 (097) 159-10-80</a></p>
+              <div class="messegers-btns">
+                <p class="mobile-description">Натисніть щоб написати у наш месенджер!</p>
+                <div class="messagers-flex">
+                  
+                  <!-- ПРАВИТЬ ТУТ --> <!-- ПРАВИТЬ ТУТ --> <!-- ПРАВИТЬ ТУТ -->
+                  <a href="https://wa.me/+380000000000" 
+              
+                  
+                  class="massagers-icons-wrapper" href="">
+                    <svg class="massagers-icons" massagers-icons width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_231_6)">
+                      <path d="M128 131H671V669H128V131Z" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M399.884 0C179.371 0 0 179.421 0 399.996C0 487.474 28.2107 568.601 76.1668 634.449L26.3265 783.063L180.074 733.926C243.31 775.783 318.774 800 400.116 800C620.629 800 800 620.572 800 400.004C800 179.428 620.629 0.00661214 400.116 0.00661214L399.884 0ZM288.214 203.18C280.458 184.605 274.58 183.901 262.83 183.423C258.829 183.191 254.37 182.959 249.427 182.959C234.141 182.959 218.158 187.425 208.517 197.301C196.767 209.293 167.614 237.273 167.614 294.653C167.614 352.034 209.46 407.529 215.099 415.294C220.977 423.045 296.68 542.505 414.221 591.192C506.139 629.286 533.415 625.755 554.334 621.289C584.894 614.705 623.217 592.121 632.857 564.851C642.498 537.568 642.497 514.286 639.671 509.349C636.851 504.411 629.088 501.597 617.338 495.71C605.588 489.83 548.456 461.611 537.641 457.848C527.059 453.853 516.954 455.266 508.966 466.555C497.68 482.311 486.634 498.305 477.697 507.942C470.644 515.468 459.119 516.41 449.485 512.408C436.554 507.006 400.355 494.296 355.683 454.556C321.123 423.756 297.616 385.429 290.802 373.908C283.981 362.154 290.098 355.325 295.499 348.981C301.377 341.687 307.017 336.517 312.896 329.695C318.774 322.879 322.065 319.348 325.827 311.351C329.828 303.593 327.001 295.596 324.181 289.716C321.361 283.836 297.854 226.455 288.214 203.18Z" fill="#67C15E"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_231_6">
+                      <rect width="800" height="800" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  
+                  <!-- ПРАВИТЬ ТУТ --> <!-- ПРАВИТЬ ТУТ --> <!-- ПРАВИТЬ ТУТ -->
+                  <a href="https://t.me/+380000000000" 
+                  
+                  class="massagers-icons-wrapper" href="">
+                    <svg class="massagers-icons" width="800" height="800" viewBox="0 0 800 800" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_231_10)">
+                        <path
+                          d="M400 800C620.914 800 800 620.914 800 400C800 179.086 620.914 0 400 0C179.086 0 0 179.086 0 400C0 620.914 179.086 800 400 800Z"
+                          fill="url(#paint0_linear_231_10)" />
+                        <path
+                          d="M599.617 234.537C603.176 211.523 581.302 193.359 560.846 202.343L153.42 381.28C138.751 387.723 139.824 409.951 155.038 414.797L239.058 441.563C255.096 446.672 272.459 444.029 286.464 434.351L475.896 303.437C481.608 299.489 487.835 307.614 482.953 312.646L346.596 453.274C333.369 466.917 335.994 490.034 351.906 500.014L504.572 595.78C521.695 606.52 543.723 595.732 546.925 575.032L599.617 234.537Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <linearGradient id="paint0_linear_231_10" x1="400" y1="0" x2="400" y2="800"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#37BBFE" />
+                          <stop offset="1" stop-color="#007DBB" />
+                        </linearGradient>
+                        <clipPath id="clip0_231_10">
+                          <rect width="800" height="800" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  
+                  <!-- ПРАВИТЬ ТУТ --> <!-- ПРАВИТЬ ТУТ --> <!-- ПРАВИТЬ ТУТ -->
+                  <a href="viber://chat?number=+38000000000" 
+                  
+                  class="massagers-icons-wrapper" href="">
+                    <svg class="massagers-icons" width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_231_2)">
+                        <path
+                          d="M427.211 260.617C435.811 260.339 444.379 261.746 452.384 264.75C460.388 267.754 467.659 272.291 473.743 278.079C479.828 283.867 484.597 290.783 487.755 298.398C490.912 306.012 492.391 314.163 492.099 322.344M412.559 206.855C430.692 206.836 448.641 210.319 465.317 217.094C481.994 223.868 497.051 233.793 509.576 246.267C522.101 258.74 531.834 273.503 538.185 289.66C544.535 305.818 547.371 323.034 546.521 340.264M393.721 155.084C422.013 154.458 450.13 159.466 476.268 169.785C502.406 180.105 525.988 195.508 545.5 215.007C565.013 234.506 580.024 257.67 589.572 283.013C599.12 308.356 602.993 335.317 600.944 362.168"
+                          stroke="#665CA7" stroke-width="10" stroke-linecap="round" />
+                        <path
+                          d="M466.981 435.841C480.935 418.584 497.681 415.929 517.217 427.877L592.571 481.639C603.734 494.913 598.85 513.498 577.919 537.392C556.987 561.286 537.451 571.242 519.31 567.26C445.352 551.33 374.184 511.506 305.808 447.788C237.431 384.07 194.87 315.043 178.125 240.705C178.125 214.156 195.568 191.589 230.454 173.005C248.595 161.058 263.945 164.376 276.503 182.961L328.832 252.652C337.205 268.582 332.321 283.184 314.18 296.458C232.547 326.326 420.932 519.471 466.981 435.841ZM63.0011 352.211C63.0011 507.524 92.3054 541.374 138.355 587.171C153.007 601.11 205.336 625.004 217.895 625.004V762.396C217.895 770.361 226.268 776.334 234.64 768.369L345.578 642.925L400 644.916C701.415 644.916 736.999 533.409 736.999 352.211C736.999 171.014 701.415 59.5072 400 59.5072C98.5848 59.5072 63.0011 171.014 63.0011 352.211ZM0.206299 352.211C0.206299 101.322 115.33 -0.228394 400 -0.228394C684.67 -0.228394 799.794 101.322 799.794 352.211C799.794 603.101 684.67 704.651 400 704.651C379.068 704.651 362.323 704.651 333.019 700.669L253.479 786.29C238.827 802.219 194.87 808.193 194.87 760.405V676.775C182.311 676.775 153.007 664.828 113.237 640.933C73.4669 615.048 0.206299 553.321 0.206299 352.211Z"
+                          fill="#665CA7" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_231_2">
+                          <rect width="800" height="800" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="full-right">
+          <img src="imgs\1.png" alt="">
+        </div>
+      </div>
+      <div class="services__wrapper">
+        <div class="services__flex">
+          <div class="services__item">
+            <div class="img-wrapper">
+              <img src="imgs\4.png" alt="">
+            </div>
+            <div class="services__text-wrapper">
+              <div class="services_label">ПОСЛУГИ</div>
+              <div class="services_name">Відкриття замків</div>
+              <div class="services_price">Від 300 грн за послугу.</div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="img-wrapper">
+              <img src="imgs\3.png" alt="">
+            </div>
+            <div class="services__text-wrapper">
+              <div class="services_label">ПОСЛУГИ</div>
+              <div class="services_name">Виїзд майстра</div>
+              <div class="services_price">500 грн.</div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="img-wrapper">
+              <img src="imgs\5.png" alt="">
+            </div>
+            <div class="services__text-wrapper">
+              <div class="services_label">ПОСЛУГИ</div>
+              <div class="services_name">Простой майстра</div>
+              <div class="services_price">300 грн за годину.</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <p class="services__alert">
+        Вказані мінімальні ціни, тариф може змінитися від складності замовлення. Точну вартість оголосить майстер. 
+      </p>
+    </section>
+    <section class="info__section" id="info">
+      <div class="info__wrapper">
+        <div class="info__left">
+          <div class="info__main-text">Трохи інформації про нас</div>
+          <div class="info-text">
+            <p class="info-text-full"><span class="yellow">Більше 7 років</span> ми займаємося повним комплексом послуг із екстреного відкриття дверей, 
+              а також установкою й заміною замків у Києві та області. В нашій компанії працюють досвідчені й кваліфіковані 
+              майстри, які використовують якісний професійний інструмент, що дозволяє надати послуги з екстреного відкриття 
+              замків швидко і без пошкодження дверного полотна.</p>
+            <p class="info-text-full">
+              У кожній складній ситуації – будь то втрата ключів або поломка замка під час відкриття дверей – телефонуйте, 
+              і наші фахівці нададуть Вам допомогу в проблемній ситуації! Ми зможемо приїхати на об'єкт вже через <span class="blue">20-30 хвилин.</span>
+              Ми відкриваємо замки без пошкоджень і дотримуємося всіх заходів щодо Вашої особистої безпеки і конфіденційності.</p>
+          </div>
+        </div>
+        <div class="info__right">
+          <img src="imgs\6.png" alt="">
+        </div>
+      </div>
+      <div class="info__wrapper reverse">
+        <div class="info__right">
+          <img src="imgs\2.png" alt="">
+        </div>
+        <div class="info__left">
+          <div class="info__main-text">Що ми робимо?</div>
+            <div class="info-text">
+            <p class="info-text-full">
+              Майже кожна людина хоч раз у житті стикалася з неприємною ситуацією, коли вона втрачала або забувала ключі, або ж двері випадково захлопувалися. 
+              Опинившись на сходовій клітині, буває, в домашньому одязі взимку, перш за все на думку спадає звернутися до сусідів і пошукати кого-небудь, у 
+              кого є запасні ключі. Але, буває, що родича чи друга, який зберігає дублікат, або зовсім немає, або ж він з тих чи інших причин не може приїхати на допомогу.
+            </p>
+            <p class="info-text-full">
+              Також нерідко зустрічаються ситуації, коли замок ламається під час відкриття дверей або ж відбувається засмічення, зношеність, корозія замка. 
+              Буває, що двері замкнені зсередини, а людина (часто літній родич) не відчиняє і не відповідає на дзвінки, і треба терміново здійснити злом помешкання. 
+              Виламати двері в таких ситуаціях – не найкраще рішення. Більш сприятливий і розумний варіант – викликати майстра аварійного відкриття замків. Ми 
+              здійснюємо аварійне відкриття замків будь-якої складності протягом більше 7 років.  </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="faq-wrapper"  id="faq">
+
+      <div class="info-label">Часто задавані питання      </div>
+      <div class="faq-body-wrapper">
+        <div class="info">
+          <input id="info__body_1" class="info__switch" type="checkbox">
+          <label for="info__body_1" class="info__headline">Чи не пошкодить майстер мій замок або двері?</label>
+          <div class="info__body">
+            Ми застосовуємо тільки високоякісні, сучасні інструменти для роботи з замками, тому полотно вхідних дверей (квартири, будинку, гаража або офісу) залишається цілісним і неушкодженим. Більшість замків також залишається без пошкоджень. У деяких ситуаціях замок доводиться ламати або повністю змінювати, про що Вас попередить наш майстер. У будь-якому випадку наші фахівці пропонують найоптимальніші та найменш затратні способи вирішення проблеми.
+          </div>
+        </div>
+        <div class="info">
+          <input id="info__body_2" class="info__switch" type="checkbox">
+          <label for="info__body_2" class="info__headline">З чого складається вартість ремонту?</label>
+          <div class="info__body">
+            Вартість послуги ремонту замка включає виклик майстра, виїзд його на об'єкт (чим далі від Києва – тим дорожче), маніпуляції з механізмом, заміну деталей замка або ж всього замка повністю. Остаточна вартість ремонту розраховується нашим майстром після проведення діагностики. Враховується ступінь зносу запчастин, складність системи та інше. Можна попередньо зорієнтуватися у вартості ремонту, якщо зв'язатися по телефону з майстром і повідомити йому подробиці ситуації, що склалася.
+          </div>
+        </div>
+        <div class="info">
+          <input id="info__body_3" class="info__switch" type="checkbox">
+          <label for="info__body_3" class="info__headline">Як довго мені доведеться чекати майстра?          </label>
+          <div class="info__body">
+            Наші майстри завжди готові виїхати Вам на допомогу. Це займе не більше 30-40 хвилин. Як правило, клієнтам потрібен терміновий ремонт замків, тому наша компанія надає послуги цілодобово (24/7), а виїзд фахівця проводиться негайно.
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="contact-wrapper" id="contacts">
+      <div class="yellow-div"></div>
+      <div class="yellow-div-2"></div>
+      <div class="contact-div-blue">
+        <p>Контактная информация</p>
+        <ul>
+          <li><img src="imgs\phone-contact.svg" alt=""><span><a class="contact-href" href="#general">Перейти до номерів</a></span> </li>
+          <li><img src="imgs\email-contact.svg" alt=""><span>expressunlockservice@gmail.com          </span> </li>
+          <li><img src="imgs\schedule-contact.svg" alt=""><span>Працюємо цілодобово з 8:00 до 21:00</span> </li>
+          <li><img src="imgs\location-contact.svg" alt=""><span>Київ та Київська обл.</span> </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-location">
+      <img src="imgs\location-footer.svg" alt="">
+      <span>Київ</span>
+    </div>
+    <div class="footer-info">
+      <div class="footer-name">EXPRESS UNLOCK</div>
+      <div class="footer-ul-wrapper">
+        <li><a href="#general">ГОЛОВНА</a></li>
+        <li><a href="#info">ПОСЛУГИ</a></li>
+        <li><a href="#faq">КОНТАКТИ</a></li>
+        <li><a href="#contacts">ПРО НАС</a></li>
+      </div>
+      <div class="footer-author">Site developer - <a class="author-href" href="https://t.me/DeathBySexy">Andrey Dvugroshev</a></div>
+    </div>
+    <div class="footer-mobile">          
+      <p class="full__wrapper-mobile-btn"><img src="imgs\vodafone-logo.svg" alt="vodofone logo"><a href="tel:+380953361080">+ 38 (095) 336-10-80</a></p>
+      <p class="full__wrapper-mobile-btn"><img src="imgs\lifecell-logo.svg" alt="lifecell logo"><a href="tel:+380635161080">+ 38 (063) 516-10-80</a></p>
+      <p class="full__wrapper-mobile-btn"><img src="imgs\kyivstar-logo.svg" alt="kyivstar logo"><a href="tel:+380971591080">+ 38 (097) 159-10-80</a></p>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
